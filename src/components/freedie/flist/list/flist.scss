@@ -1,0 +1,239 @@
+.l-container{
+    display: flex;
+    width: 100%;
+    // height: 100px;
+    padding: 48px 15.625vw;
+    border-bottom: 1px solid rgba(242, 229, 255, 0.301);
+    border-top: 1px solid rgba(242, 229, 255, 0.301);
+    transition: background 0.1s ;
+    transition-delay: 0s;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+    @media screen and (max-width:1250px) {
+        padding: 24px 40px;
+    }
+    @media screen and (max-width:900px) {
+        padding: 24px 20px;
+    }
+}
+
+.l-container, .l-container > *{
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.profile{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: clamp(24px, 2.0vw, 60px);
+    @media screen and (max-width: 1250px) {
+        width: 75px;
+        height: 75px;
+        margin-right: 16px;
+    }
+    @media screen and (max-width: 900px) {
+        // width:20%;
+        width: 56px;
+        height: 56px;
+    }
+    @media screen and (max-width: 400px) {
+        // width:25%;
+    }
+    
+}
+
+.prof-container{
+    width:100%;
+    height: 100%;
+    border-radius: 82% 18% 57% 43% / 31% 63% 37% 69% ;
+    box-shadow: 1px 0px 4px 1px #00000038;
+    padding: 2px;
+    transition: background 0.5s , border-radius 0.5s ease, ;
+    transition-delay: 0.5s, 0.2s, ;
+    // border: 4px solid transparent; /* Create space for the border */
+    background: linear-gradient(45deg, #ffffff, #eee38e6c); /* Gradient definition */
+    background-clip: padding-box; /* Clip the background to the padding box */
+    -webkit-background-clip: padding-box; /* For WebKit browsers */
+}
+
+.prof-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: border-radius 0.5s ease;
+    transition-delay: 0.2s;
+    border-radius: 82% 18% 57% 43% / 31% 63% 37% 69% ;
+    object-fit: cover;
+}
+
+@keyframes scroll-list{
+
+    from{
+        // color: rgb(0, 0, 0);
+        background-size: 0% 100%;
+        background-image: linear-gradient(90deg, #C9549D, #C9549D);
+    }
+    to{
+        background-size: 100% 100%;
+        // color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(90deg, #C9549D, #C9549D);
+        // background-color: #d54973;
+    }
+}
+@keyframes scroll-role{
+
+    from{
+        // color: rgb(0, 0, 0);
+        background-size: 0% 100%;
+        background-image: linear-gradient(90deg, rgb(46, 46, 46), rgb(46, 46, 46))
+    }
+    to{
+        background-size: 100% 100%;
+        // color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(90deg, rgb(46, 46, 46),  rgb(46, 46, 46));
+        // background-color: #d54973;
+    }
+}
+
+.l-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.list-name{
+    font-size: clamp(32px, 2.5vw, 50px);
+    font-weight: 400;
+    font-family: "Poppins";
+    line-height: 1;
+    background-image: linear-gradient(90deg, #F3E8FF, #F3E8FF);
+    background-repeat: no-repeat;
+    background-clip: text;
+    background-size: 100% 100%;
+    color: #eee38e00;
+    margin-bottom: 16px;
+    @media screen and (max-width: 1250px) {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    
+    @media screen and (max-width: 900px) {
+        font-size: 20px;
+    }
+    
+    // animation-timeline: view();
+    // animation-range: entry 0% cover 100%;
+}
+
+.role{
+    font-size: clamp(16px, 1vw, 28px );
+    font-weight: 500;
+    font-family: "Quicksand";
+    color: #d9d9d900;
+    background-image: linear-gradient(90deg, #F3E8FF, #F3E8FF);
+    background-repeat: no-repeat;
+    background-clip: text;
+    background-size: 100% 100%;
+    line-height: 1;
+    @media screen and (max-width: 1250px) {
+        font-size: 20px;;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 16px;
+    }
+    // text-transform: ;
+}
+
+
+.l-container:hover{
+    background-color: #F3E8FF;
+    // box-shadow: inset 0px 0px 4px 1px white;
+}
+.l-container:hover .list-name{
+    background-size: 0% 100%;
+    color:#d5497323;
+    background-image: linear-gradient(90deg, #eee38e00, #eee38e00);
+    animation: scroll-list 4s forwards;
+    animation-delay: .1s;
+    @media screen and (max-width: 1100px) {
+        animation: scroll-list 1s forwards;
+        animation-delay: .6s;
+    }
+    @media screen and (max-width: 600px) {
+        animation: scroll-list .5s forwards;
+        animation-delay: .1s;
+    }
+}
+.l-container:hover .role{
+    color: rgba(0, 0, 0, 0.13);
+    animation: scroll-role 3s forwards;
+    animation-delay: .5s;
+    @media screen and (max-width: 1100px) {
+        animation: scroll-role 1s forwards;
+        animation-delay: .5s;
+    }
+    @media screen and (max-width: 600px) {
+        animation: scroll-role 1s forwards;
+        animation-delay: .5s;
+    }
+}
+.l-container:hover .prof-img{
+    border-radius: 36% 64% 44% 56% / 55% 71% 29% 45% ;
+}
+
+.l-container:hover .prof-container{
+    background: linear-gradient(90deg, #C9549D 40%, #7B6DDB 80%);
+    border-radius: 36% 64% 44% 56% / 55% 71% 29% 45% ;
+    // box-shadow: 20px 2px 20px 0px #9c98bd, -7px 1px 20px 0px #d54973;
+     @media screen and (max-width: 1100px) {
+        // box-shadow: 6px 2px 20px 0px #9c98bd, -7px 1px 20px 0px #d54973;
+     }
+    // padding: 4px;
+}
+
+
+.f-button{
+    // opacity: 0;
+    width: 5%;
+    height: min-content;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // transition: all 0.5s ease-in 0.2ms;
+    transition-delay: 1.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    @media screen and (max-width: 1100px) {
+        width:10%;
+    }
+    @media screen and (max-width: 600px) {
+        width:12%;
+    }
+    @media screen and (max-width: 400px) {
+        width:15%;
+    }
+}
+
+.f-button img{
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+    display: block;
+    transition: background-color 0.5s ,transform 0.5s ease;
+    transition-delay: 0.2s, .5s;
+    border-radius: 50%;
+    background-color: #d5497300;
+}
+.l-container:hover .f-button img{
+//  opacity: 1;
+ background-color: #7B6DDB;
+ transform: rotate(360deg);
+//  box-shadow: 0px 0px 6px 2px #d549738f;
+}

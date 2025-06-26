@@ -1,0 +1,43 @@
+.schedule-button button{
+    background: none; /* Removes default background */
+    border: none; /* Removes default border */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    outline: none; /* Removes default focus outline */
+    box-shadow: none; /* Removes any default shadows */
+    font: inherit; /* Ensures it inherits font styles from parent */
+    color: inherit; /* Ensures it inherits color from parent */
+    cursor: pointer; /* Ensures it still behaves like a button */
+    margin-left: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.schedule-button{
+  width: max-content;
+}
+
+.schedule-button button{
+    width: max-content;
+    padding: clamp(10px,0.781vw, 15px) clamp(11px,0.833vw, 16px);
+    background: #C9549D;
+    border: 1px solid #201D06;
+    box-shadow: 4px 4px 0px 1px rgba(26, 26, 26, 0.7);
+    color: #F3E8FF;
+    font-size: var(--font-small);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-family: 'Quicksand';
+    @media screen and (max-width: 768px) {
+      padding: 8px 10px;
+      font-size: 16px;
+    }
+ 
+}
+
+.schedule-button button:hover{
+  box-shadow: 2px 2px 0px 1px rgba(26, 26, 26, 0.7);
+    transform: translate3d(2px, 2px, 0px);
+
+}

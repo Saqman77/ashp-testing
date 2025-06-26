@@ -1,0 +1,180 @@
+@keyframes sparkleScale {
+    from,to {
+        transform: translateY(0%) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sparkleRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.aboutSection {
+    padding: 6.45vw 15.625vw;
+
+    @media screen and (max-width: 1250px) {
+        padding: 100px 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 20px;
+    }
+
+    .sparkle {
+        position: absolute;
+        transform-origin: center;
+        animation: sparkleRotate 0.7s linear infinite;
+        display: flex;
+
+        &.small {
+            width: 10px;
+            height: 10px;
+        }
+
+        &.medium {
+            width: 16px;
+            height: 16px;
+        }
+
+        &.big {
+            width: 20px;
+            height: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .smallHeading {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Quicksand", sans-serif;
+        color: #4B3B74;
+        margin-bottom: 20px;
+        position: relative;
+
+        .sparkle.big {
+            top: -13px;
+            left: 85px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .mainHeading {
+        font-size: clamp(40px, 2.9vw, 64px);
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 20px;
+        line-height: 1.1;
+        position: relative;
+
+        .sparkle.small {
+            width: 10px;
+            height: 10px;
+            bottom: 3.2vw;
+            left: 0;
+            @media screen and (max-width:1250px) {
+                display: none;
+            }
+        }
+
+        .since {
+            color: #4B3B74;
+        }
+
+        .year {
+            color: #7B6DDB;
+        }
+    }
+
+    .firstParagraph {
+        font-size: clamp(24px, 1.8vw, 40px);
+        font-weight: 700;
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 50px;
+
+        @media screen and (max-width:1250px) {
+            margin-bottom: 40px;
+        }
+
+        .companyName {
+            color: #C9549D;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .serviceName {
+            color: #7B6DDB;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .description {
+            color: #4D4D4D;
+            font-family: "Quicksand", sans-serif;
+        }
+    }
+
+    .secondParagraph {
+        font-size: clamp(16px, 1.25vw, 32px);
+        font-weight: 700;
+        font-family: "Quicksand", sans-serif;
+        color: #4D4D4D;
+        margin-bottom: 124px;
+        @media screen and (max-width:1250px) {
+            margin-bottom: 80px;
+        }
+
+        .familyRun,
+        .bestSelling,
+        .awardWinning {
+            color: #C9549D;
+            font-family: "Quicksand", sans-serif;
+            position: relative;
+        }
+
+        .publisher {
+            color: #7B6DDB;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .familyRun {
+            .sparkle.medium {
+                right: -5px;
+                top: -18px;
+                @media screen and (max-width:1250px) {
+                    display: none;
+                }
+            }
+        }
+
+        .bestSelling {
+            .sparkle.medium {
+                left: -5px;
+                top: -18px;
+                @media screen and (max-width:1250px) {
+                    display: none;
+                }
+            }
+        }
+        .awardWinning {
+            .sparkle.small {
+                left: -5px;
+                top: -5px;
+                @media screen and (max-width:1250px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+// Breakpoints
+.testimonialSection {
+    padding: 6.45vw 15.625vw;
+
+    .testimonialHeader {
+        text-align: center;
+        margin-bottom: 3.33vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 2.9vw;
+            font-weight: 600;
+            color: #7B6DDB;
+            line-height: 1.035;
+            font-family: 'Poppins';
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            font-weight: 500;
+            color: #697484;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+    }
+
+    .carouselContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0 60px;
+
+        .navButton {
+            background: none;
+            border: none;
+            padding: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.prevButton {
+                left: 0;
+            }
+
+            &.nextButton {
+                right: 0;
+            }
+
+            &:hover {
+                transform: translateY(-50%) scale(1.05);
+            }
+
+            &:active {
+                transform: translateY(-50%) scale(0.95);
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                path{
+                    fill: #C9549D;
+                }
+            }
+        }
+
+        .carousel {
+            flex: 1;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .slide {
+            text-align: center;
+            border-radius: 10px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // padding: 0 20px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+            &.keen-slider__slide {
+                min-width: 100%;
+                width: 100%;
+            }
+
+            .quoteIcon {
+                width: 40px;
+                height: 40px;
+                margin-bottom:1.6vw;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    path{
+                        fill:#2E2E2E
+                    }
+                }
+            }
+
+            .quote {
+                font-size: 1.25vw;
+                color: #2E2E2E;
+                line-height: 1.6;
+                font-weight: 500;
+                @media screen and (max-width:1250px) {
+                    font-size: 20px;
+                }
+            }
+
+            .authorInfo {
+                margin-top: clamp(28px, 1.667vw, 32px);
+
+                h4 {
+                    color: #4B3B74;
+                    font-size: 1.875vw;
+                    margin-bottom: 0.5rem;
+                    font-family: "Quicksand";
+                    font-weight: 700;
+                }
+
+                p {
+                    color: #5E6971;
+                    font-size: 16px;
+                    font-family: "Nunito Sans";
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 900px) {
+    .testimonialSection {
+        padding: 80px 20px;
+
+        .testimonialHeader {
+            margin-bottom: 40px;
+            align-items: start;
+            text-align: left;
+            h2 {
+                font-size: clamp(40px, 10.6vw, 50px);
+            }
+        }
+
+        .carouselContainer {
+            padding: 0;
+
+            .navButton {
+                top:auto;
+                bottom: -65px;
+                &.prevButton{
+                    left: auto;
+                    right: 53px;
+                }
+                &:hover {
+                    transform: translateY(none) scale(none);
+                }
+
+                &:active {
+                    transform: translateY(none) scale(0.95);
+                }
+            }
+
+            .carousel {
+                order: 1;
+                max-width: 100%;
+            }
+
+            .slide {
+                // padding: 1.5rem;
+                text-align: left;
+                align-items: start;
+                min-height: 250px;
+                .authorInfo{
+                    h4 {
+                        font-size: clamp(30px, 9.6vw, 40px);
+                    }
+                }
+                .quoteIcon{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,100 @@
+.servicesSection {
+    padding: 6.45vw 15.625vw;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5.2vw;
+    @media (max-width: 1250px) {
+        text-align: left;
+    }
+}
+
+.heading {
+    font-size: 2.91vw;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #7B6DDB;
+    line-height: 1em;
+    @media screen and (max-width:1250px) {
+        font-size: clamp(50px, 4vw, 64px);
+    }
+    @media screen and (max-width:768px) {
+        font-size: clamp(40px, 10.6vw, 50px);
+    }
+}
+
+.description {
+    font-size: 16px;
+    color: #4D4D4D;
+    margin: 0 auto;
+    line-height: 1.6;
+    max-width: 731px;
+    display: none;
+    @media screen and (max-width:1250px) {
+        margin: 0 0 80px;
+    }
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items within their grid cells */
+    margin-top: 80px;
+    @media screen and (max-width:1250px) {
+        justify-items: left;
+        margin-top: 80px;
+    }
+}
+
+/* Target the 7th card (the last one) to place it in the middle column */
+.cardsContainer :nth-child(7) {
+    grid-column: 2 / 3; /* Place item in the second column */
+}
+
+/* Adjust for screens where 3 columns might be too wide for card size */
+@media (max-width: 1450px) {
+    .cardsContainer {
+        gap: 40px; /* Reduce gap */
+        grid-template-columns: 1fr 1fr; /* Flexible columns */
+        /* Remove specific placement for the 7th child in this view */
+        & :nth-child(7) {
+            grid-column: auto; /* Reset grid column property */
+        }
+    }
+}
+@media (max-width: 1250px) {
+    .servicesSection {
+        padding: 80px 40px;
+    }
+    .cardsContainer {
+        gap: 80px; /* Reduce gap */
+        grid-template-columns: 1fr 1fr; /* Flexible columns */
+        /* Remove specific placement for the 7th child in this view */
+        & :nth-child(7) {
+            grid-column: auto; /* Reset grid column property */
+        }
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .servicesSection {
+        padding: 40px 20px;
+    }
+
+
+    .description {
+        font-size: 16px;
+    }
+
+    .cardsContainer {
+        grid-template-columns: repeat(1, 1fr); /* Stack cards in a single column */
+        gap: 64px; /* Add gap between stacked cards */
+         /* Remove specific placement for the 7th child in this view */
+         & :nth-child(7) {
+            grid-column: auto; /* Reset grid column property */
+        }
+    }
+} 

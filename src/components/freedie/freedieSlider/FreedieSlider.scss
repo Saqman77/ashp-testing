@@ -1,0 +1,167 @@
+.slider-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // background: #251d3a;
+
+    // .bg-text{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translateX(-50%) translateY(-50%);
+    //     display: flex;
+    //     h3{
+    //         font-size: 10.4vw;
+    //         font-family: "Euphorigenic";
+    //         color: #f5f5f51e;
+    //         font-weight: 100;
+    //     }
+    // }
+
+    .f-toggle-header{
+        // margin-top: 200px;
+        margin: 0;
+        height: auto;
+        position: absolute;
+        width: 100%;
+        gap: 0;
+        top: 200px;
+        z-index: 1;
+        padding-left: 15.625vw;
+        padding-right: 15.625vw;
+        padding-top: 0;
+        justify-content: right;
+        @media screen and (max-width:1250px) {
+            padding: 0px 40px 0;
+            top:100px;
+        }
+        @media screen and (max-width:600px) {
+            padding: 0px 20px;
+            top:80px;
+        }
+
+        .f-toggle-heading{
+            font-size: 20px;
+            font-family: "Quicksand";
+            font-weight: 600;
+            color: #F3E8FF;
+            margin-right: auto;
+            text-transform: capitalize;
+            position: relative;
+            @media screen and (max-width:1250px) {
+                font-size: 18px;
+            }
+            @media screen and (max-width:600px) {
+                font-size: 16px;
+            }
+        }
+
+        .f-indicator{
+            font-size: 16px;
+            color: #F3E8FF;
+            position: absolute;
+            left: 50%;
+            top: 50vh;
+        }
+        .toggle-box{
+            display: flex;
+            span{
+                background-color: #F3E8FF;
+                width: 1px;
+                height: 100%;
+                margin: 0 24px;
+            }
+            button{
+                padding: 0;
+                background: none;
+                border: none;
+                border-radius: none;
+                color: #f5f5f598;
+                &.active{
+                    color: #C9549D;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slider{
+        // position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform-style:preserve-3d ;
+        perspective: 750px;
+        overflow: hidden;
+        // background-color: #C9549D;
+    }
+
+    .slide{
+        position: absolute;
+        width: 400px;
+        min-height: 500px;
+        overflow: hidden;
+        cursor: pointer;
+        // Positioning, transform, and opacity are set dynamically via inline styles in FreedieSlider.tsx
+        @media screen and (max-width:1250px) {
+            width: 200px;
+            min-height: 250px;
+        }
+        @media screen and (max-width:600px) {
+            width: 150px;
+            min-height: 190px;
+        }
+    }
+
+    .slide-img{
+        margin-bottom: 40px;
+        @media screen and (max-width:1250px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width:900px) {
+            
+        }
+    }
+
+    .slide-copy p{
+        font-size: clamp(32px, 2.5vw, 50px);
+        font-weight: 400;
+        font-family: "Poppins";
+        line-height: 1;
+        color: #F5F5F5;
+        margin-bottom: 20px;
+        @media screen and (max-width: 1250px) {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        
+        @media screen and (max-width: 900px) {
+            font-size: 18px;
+        }
+    }
+    .slide-copy p#index{
+        font-size: clamp(16px, 1vw, 28px );
+        line-height: 1.2;
+        color: #F5F5F5;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-family: "Quicksand";
+        @media screen and (max-width: 1250px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 900px) {
+            font-size: 10px;
+        }
+    }
+
+    /* Slide positioning is now handled dynamically in the React component. */
+    /* The following static rules are no longer needed and are removed for scalability. */
+    // #slide-1, #slide-2, ... #slide-10
+}

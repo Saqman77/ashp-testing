@@ -1,0 +1,210 @@
+.cardContainer {
+    width: clamp(320px,22.083vw,500px);
+    height: clamp(336px,17.5vw,336px);
+    perspective: 1000px;
+    @media screen and (max-width:1450px) {
+        width: 100%;
+        max-width: 500px;
+    }
+    @media screen and (max-width:1250px) {
+        width: 100%;
+        max-height: 300px;
+        max-width: 600px;
+    }
+    @media screen and (max-width:900px) {
+        width: 100%;
+        max-height: 300px;
+        max-width: 800px;
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        max-height: 280px;
+        max-width: 800px;
+    }
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 2.08vw;
+    transition: box-shadow 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 2px solid #7B6DDB;
+    @media screen and (max-width:1450px) {
+        padding: 32px;
+    }
+}
+
+.cardFront {
+    box-shadow: 12px 12px 0px 0px rgba(26, 26, 26, 0.8);
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+    box-shadow: 12px 12px 0px 0px rgba(26, 26, 26, 0.8);
+}
+
+/* Remove shadow during flip */
+.card.flipping .cardFront,
+.card.flipping .cardBack {
+    box-shadow: none;
+}
+
+/* Ensure shadow is visible after flip */
+.flipped .cardFront {
+    box-shadow: none;
+}
+
+.flipped .cardBack {
+    box-shadow: 12px 12px 0px 0px rgba(26, 26, 26, 0.8);
+}
+
+.serv-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:1450px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.s-header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconContainer {
+    width: 3.6vw;
+    min-width: 3.6vw;
+    height: 3.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #7B6DDB;
+    box-shadow: 1px 2px 4px 1px rgba(26, 26, 26, 0.384);
+    @media screen and (max-width:1450px) {
+        margin-left: auto;
+    }
+    @media screen and (max-width:1250px) {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+    }
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: clamp(16px, 1.25vw, 24px);
+    font-weight: 700;
+    font-family: "Quicksand";
+    text-align: left;
+    color: #2E2E2E;
+    margin-bottom: 16px;
+    @media screen and (max-width: 1450px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 1250px) {
+        font-size: clamp(18px, 1.6vw, 24px);
+    }
+    @media screen and (max-width: 900px) {
+        font-size: clamp(18px, 4.2vw, 20px);
+    }
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-family: "Nunito Sans";
+    font-weight: 500;
+    text-align: left;
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #C9549D;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    margin-top: auto;
+    &:hover{
+        text-shadow: 0px 0px 10px #c9549c;
+    }
+
+    @media screen and (max-width:1250px) {
+        font-size: 12px;
+    }
+    
+}
+
+.readMoreIcon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    @media screen and (max-width:1250px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.description {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.56;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    @media screen and (max-width:1250px) {
+        line-height: 1.2em;
+    }
+}
+
+.description p {
+    margin: 0 0 10px;
+}
+
+.flipBack {
+    background: #007bff00;
+    color: #C9549D;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito Sans";
+    @media screen and (max-width:1250px) {
+        font-size: 12px;
+    }
+}
+
+.flipBack:hover {
+    background: #0057b300;
+} 

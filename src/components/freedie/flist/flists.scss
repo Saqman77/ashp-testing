@@ -1,0 +1,18 @@
+.lists-wrapper{
+    width:100%;
+    display: flex;
+
+
+}
+
+.f-ul{
+    list-style-type: none;
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.f-ul li{
+    width: 100%;
+    display: flex;
+}

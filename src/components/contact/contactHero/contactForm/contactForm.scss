@@ -1,0 +1,84 @@
+.contactForm {
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: transparent;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .topRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  
+  .fromLabel {
+    font-size: 24px;
+    margin-right: 42px;
+  }
+  
+  .input {
+    height: 40px;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-right: 42px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 0 0 240px;
+    background: #fff;
+  }
+  
+  .input:last-child {
+    margin-right: 0;
+  }
+  
+  .messageSection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 48px;
+  }
+  
+  .messageLabel {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 298px;
+    font-size: 18px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    background: #fff;
+  }
+  
+  .buttonRow {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .sendButton {
+    width: 140px;
+    height: 50px;
+    background: #a48be0;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  
+  .sendButton:hover {
+    background: #8c6fc6;
+  } 

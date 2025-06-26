@@ -1,0 +1,5 @@
+export const theStoryContent = {
+  heading: 'THE STORY',
+  image:'/src/assets/freedi/FrEdiBuddies without title.webp',
+  description: `When Ash P started out as an independent service provider, 20 or so years ago, the market was fairly new in Pakistan. The learning curve was steep and much was learned through trial and error. Now that independent services and working remotely is recognized as a "real" job, it is an option that many prefer to a regular 9-5 career.\n\nKeeping that in mind, Ash P Reads FrEdiBuddies was created to give budding independent service providers a platform to hone their skills and a safe space where projects and clients are vetted, to prevent them from falling victim to fakes and scam artists. Ash P Reads FrEdiBuddies are a collective of independent service providers that have been verified and authenticated by us.`
+}; 

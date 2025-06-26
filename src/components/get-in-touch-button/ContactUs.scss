@@ -1,0 +1,88 @@
+$font-xSmall: 12px;
+  $font-small: 20px;
+  $font-medium: 24px;
+  $font-large: 60px;
+  $font-xlarge: 80px;
+
+  @media screen and (max-width: 1500px){
+    $font-xSmall: 12px;
+    $font-small: 20px;
+    $font-medium: 24px;
+    $font-large: 48px;
+    $font-xlarge: 52px;
+  }
+
+
+  @media screen and (max-width: 900px){
+    $font-xSmall: 12px;
+    $font-small: 12px;
+    $font-medium: 12px;
+    $font-large: 24px;
+    $font-xlarge: 24px;
+  }
+
+  .navigate-button{
+    width: fit-content;
+  }
+
+.navigate-button button{
+    background: none; /* Removes default background */
+    border: none; /* Removes default border */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    outline: none; /* Removes default focus outline */
+    box-shadow: none; /* Removes any default shadows */
+    font: inherit; /* Ensures it inherits font styles from parent */
+    color: inherit; /* Ensures it inherits color from parent */
+    cursor: pointer; /* Ensures it still behaves like a button */
+    margin-left: 0;
+}
+
+.navigate-button button{
+    width: max-content;
+    padding-top: clamp(8px, 0.625vw, 12px);
+    padding-bottom: clamp(8px, 0.625vw, 12px);
+    padding-left: clamp(6px, 0.52vw, 10px);
+    padding-right:clamp(6px, 0.52vw, 10px);
+    background: #7163DE;
+    border: 1px solid #201D06;
+    box-shadow: 4px 4px 0px 1px rgba(26, 26, 26, 0.7);
+    color: #F3E8FF;
+    font-size: var(--font-small);
+    font-weight: 600;
+    font-family: 'Quicksand';
+}
+
+.navigate-button button:hover{
+    box-shadow: 2px 2px 0px 1px rgba(26, 26, 26, 0.7);
+    transform: translate3d(2px, 2px, 0px);
+}
+
+.contact-us-button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us-text p{
+    color: #F3E8FF;
+    font-size: var(--font-small);
+    font-weight: 600;
+    font-family: 'Quicksand';
+    margin-right: 10px;
+    line-height: 1em;
+}
+
+.contact-us-arrow{
+  width: clamp(14px, 0.833vw, 16px);
+  height: clamp(14px, 0.833vw, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us-arrow img{
+    width: 100%;
+    height: 100%;
+    fill: #F3E8FF;
+}

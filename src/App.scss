@@ -1,0 +1,79 @@
+@import url('../src/styles/fonts.scss');
+
+
+:root {
+  --font-xsmall: 12px;
+  --font-small: clamp(16px, 1.2vw, 20px);
+  --font-medium: clamp(20px, 1.6vw, 30px);
+  --font-large: clamp(30px, 3vw, 40px);
+  --font-xlarge: clamp(40px, 4.1vw, 60px);
+  --font-xxlarge: clamp(50px, 5.1vw, 120px);
+}
+
+// @media screen and (max-width: 1650px) {
+//   :root {
+//     --font-xsmall: 12px;
+//     --font-small: 16px;
+//     --font-medium: 24px;
+//     --font-large: 40px;
+//     --font-xlarge: 52px;
+//     --font-xxlarge: clamp(30px, 8.1vw, 80px);
+//   }
+// }
+// @media screen and (max-width: 1250px) {
+//   :root {
+//     --font-xsmall: 12px;
+//     --font-small: 20px;
+//     --font-medium: 24px;
+//     --font-large: 40px;
+//     --font-xlarge: 52px;
+//     --font-xxlarge: clamp(30px, 8.1vw, 80px);
+//   }
+// }
+
+@media screen and (max-width: 1199px) {
+  :root {
+    --font-xsmall: 12px;
+    --font-small: 16px;
+    --font-medium: 20px;
+    --font-large: 35px;
+    --font-xlarge: clamp(24px, 6.4vw, 40px);
+    --font-xxlarge: clamp(30px, 7.1vw, 50px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --font-xsmall: 10px;
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: clamp(18px, 3vw, 24px);
+    --font-xlarge: clamp(24px, 8vw, 40px);
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --font-xsmall: 10px;
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: clamp(18px, 3vw, 24px);
+    --font-xlarge: clamp(24px, 6vw, 30px);
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"poppins", sans-serif;
+  // letter-spacing: 1px;
+  color: #555;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+a {
+  color: inherit; /* Inherits the text color from the parent element */
+  text-decoration: none; /* Removes the underline */
+  font-family: inherit;
+}
+

@@ -1,0 +1,187 @@
+// @import url('https://fonts.cdnfonts.com/css/euphorigenic');
+
+* {
+  letter-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('/src/assets/fonts/CANDARA.woff2') format('woff2'),
+        url('/src/assets/fonts/CANDARA.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Candara';
+  src: url('/src/assets/fonts/CANDARAB.woff2') format('woff2'),
+         url('/src/assets/fonts/CANDARAB.woff') format('woff');
+  font-weight: 600; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Euphorigenic';
+  src: url('/src/assets/fonts/euphorigenic.woff2') format('woff2'),
+        url('/src/assets/fonts/euphorigenic.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Euphorigenic';
+  src: url('/src/assets/fonts/euphorigenic.woff2') format('woff2'),
+         url('/src/assets/fonts/euphorigenic.woff') format('woff');
+  font-weight: 500; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/src/assets/fonts/Quicksand-Regular.woff2') format('woff2');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/src/assets/fonts/Quicksand-Medium.woff2') format('woff2');
+  font-weight: 500; /* medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/src/assets/fonts/Quicksand-SemiBold.woff2') format('woff2');
+  font-weight: 600; /* semi-bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/src/assets/fonts/Quicksand-Bold.woff2') format('woff2');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/fonts/Poppins-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/src/assets/fonts/Comfortaa-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/src/assets/fonts/Comfortaa-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/src/assets/fonts/Comfortaa-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/src/assets/fonts/Comfortaa-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/src/assets/fonts/Comfortaa-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/src/assets/fonts/NunitoSans-VariableFont.woff2') format('woff2-variations');
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+  
+     
+
+
+  
+
+
+
+  

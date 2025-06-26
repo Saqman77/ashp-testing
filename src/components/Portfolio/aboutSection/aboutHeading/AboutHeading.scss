@@ -1,0 +1,71 @@
+.aboutHeading {
+    padding: 124px 0px ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width:1250px) {
+        padding: 80px 0 ;
+    }
+    h1 {
+        font-family: "Euphorigenic", sans-serif;
+        font-size: clamp(60px, 3.75vw, 80px);
+        color: #DD8DA1;
+        font-weight: 100;
+        position: relative;
+        width: max-content;
+        text-align: center;
+        @media screen and (max-width:900px) {
+            font-size: clamp(24px, 7.4vw, 32px);
+        }
+        .sparkle.big{
+            top:-10;
+            left: -1vw;
+            @media screen and (max-width:900px) {
+                width: 16px;
+                height: 16px;
+                display: none;
+            }
+        }
+        .sparkle.medium{
+            @media screen and (max-width:900px) {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .sparkle.medium.first{
+            bottom: -14px;
+            left: -12px;
+            @media screen and (max-width:900px) {
+                width: 16px;
+                height: 16px;
+                display: none;
+            }
+        }
+        .sparkle.medium.second{
+            top:0;
+            left:7.6vw;
+        }
+        .sparkle.medium.third{
+            top:0;
+            right: 0;
+        }
+        .sparkle.medium.fourth{
+            bottom: 0;
+            right:0;
+            @media screen and (max-width:900px) {
+                width: 16px;
+                height: 16px;
+                display: none;
+            }
+        }
+        .sparkle.small{
+            top:16px;
+            left:26vw;
+            @media screen and (max-width:900px) {
+                width: 16px;
+                height: 16px;
+                display: none;
+            }
+        }
+    }
+} 

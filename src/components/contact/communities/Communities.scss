@@ -1,0 +1,71 @@
+.communities {
+  width: 100%;
+  background-color: #F3E8FF;
+  
+  .communities-header {
+    padding: 72px 0;
+    border: 1px solid #7B6DDB;
+    @media screen and (max-width:1250px) {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .header-icon {
+        width: 44px;
+        height: 44px;
+        margin-right: 12px;
+      }
+      
+      .header-heading {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+        color: #4B3B74;
+        @media screen and (max-width:1250px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
+  .communities-list {
+    width: 100%;
+    
+    .community-item {
+      width: 100%;
+      font-family: 'Comfortaa', sans-serif;
+      padding: 24px 0;
+      font-size: 36px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      color: #4D4D4D;
+      border-bottom: 1px solid #7B6DDB;
+      @media screen and (max-width:1250px) {
+        font-size: 24px;
+        justify-content: left;
+        padding: 24px 40px;
+      }
+      @media screen and (max-width:900px) {
+        font-size: 24px;
+        justify-content: left;
+        padding: 24px 20px;
+      }
+      
+      &:hover {
+        background-color: #7B6DDB; // You can customize this color
+        color: #F3E8FF; // You can customize this color
+      }
+    }
+  }
+}
